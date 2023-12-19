@@ -14,4 +14,6 @@ with open('caesar.txt', 'r', encoding='utf-8') as f:
                     vers += angol_abc[index].lower()
             else:
                 vers += ch
-print(vers)
+
+with open('vers.txt', 'w',  encoding='utf-8') as f:
+        print(vers, file=f)
